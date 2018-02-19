@@ -1,0 +1,11 @@
+# We will use this file to tell Git to ignore (i.e. not keep track of) certain files.
+# This will be useful if we, for instance, put anything with passwords, keys, etc in the
+# repository while testing code on our machines.
+# Syntax:
+# <-- I will write some syntax/common uses here -->
+
+# Ignore SSH files
+*.ssh
+
+# Ignore log files
+*.log
