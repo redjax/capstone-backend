@@ -1,7 +1,11 @@
-## capstone-backend
+# capstone-backend
 
 ---
 
-# Web Programming/Digital Sciences Capstone Project 2018 Spring
+## Web Programming/Digital Sciences Capstone Project 2018 Spring
 
-## Backend Development Team
+### *Backend Development Team*
+
+--
+
+This is the Github repository for the backend development portion of the Underground Railroad project.
