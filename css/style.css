@@ -28,7 +28,11 @@ body {
 .section {
 	background-image: url("image/main/worn.jpg");
 	background-size: cover;
-	padding: 30px;
+	padding-top: 8%;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100vh;
 }
 
 /* NAV
@@ -419,4 +423,22 @@ nav ul.sub li a:hover { color: #b7ac7f; }
 }
 
 
+}
+
+
+
+/* ---------- Testing -------- */
+
+.yellow {
+  background: yellow;
+  height: 40%;
+}
+
+.blue {
+  background: blue;
+  height: 40%;
+}
+
+.portrait {
+  max-width: 50%;
 }
