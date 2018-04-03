@@ -39,4 +39,15 @@ $(document).ready(function() {
         });
 
 
+// iZiModals
+
+        
+//IZI Modal [START]
+        $("#page1-expand").iziModal({
+        overlayClose: false,
+        overlayColor: 'rgba(0, 0, 0, 0.6)'
+
+});
+
+
 });

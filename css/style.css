@@ -35,6 +35,13 @@ body {
   height: 100vh;
 }
 
+/* Expansion Modals */
+
+
+#page1-expand {
+  margin-top: 100px;
+}
+
 /* NAV
 ================================================ */
 /*  BURGER
