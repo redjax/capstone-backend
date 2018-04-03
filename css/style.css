@@ -35,6 +35,13 @@ body {
   height: 100vh;
 }
 
+/* Expansion Modals */
+
+
+#page1-expand {
+  margin-top: 100px;
+}
+
 /* NAV
 ================================================ */
 /*  BURGER
@@ -441,4 +448,8 @@ nav ul.sub li a:hover { color: #b7ac7f; }
 
 .portrait {
   max-width: 50%;
+}
+
+.text-center {
+  text-align: center;
 }
