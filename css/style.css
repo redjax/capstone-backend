@@ -28,10 +28,10 @@ body {
 .section {
 	background-image: url("image/main/worn.jpg");
 	background-size: cover;
-	padding-top: 8%;
-  padding-bottom: 30px;
-  padding-left: 10%;
-  padding-right: 10%;
+	padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
   height: 100vh;
 }
 
