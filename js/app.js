@@ -14,9 +14,9 @@ $(document).ready(function() {
         loopTop: false,
         css3: true,
         navigation: {
-            'textColor': '#000',
-            'bulletsColor': '#000',
-            'position': 'right',
+            'textColor': '#fff',
+            'bulletsColor': '#fff',
+            'position': 'bottom-center',
             'tooltips': ['section1', 'section2', 'section3']
         },
        	normalScrollElements: null,
