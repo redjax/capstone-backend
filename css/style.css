@@ -1,7 +1,7 @@
-/* General 
+/* General
 =============================================== */
 
-body {	
+body {
 	margin: 0;
 }
 
@@ -10,7 +10,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 100vw;
-	background-color: : transparent;
+	background-color: transparent;
 	padding: .5rem;
 	z-index: 500;
 }
@@ -478,10 +478,25 @@ nav ul.sub li a:hover { color: #b7ac7f; }
 }
 
 .cinemagraph {
-	
+
 }
 
+/* Oberlin Page CSS */
+.oberlin {
+  background-image: url("image/main/worn.jpg");
+}
 
+.oberlin-large {
+  font-size: 5em;
+}
+
+.oberlin-med {
+  font-size: 2.5em;
+}
+
+.oberlin-sm {
+  font-size: 1.2em;
+}
 
 
 
@@ -549,5 +564,5 @@ Map
     max-height: auto;
 
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
