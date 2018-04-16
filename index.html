@@ -48,7 +48,7 @@
 
       <!--1. Section 1 -->
 
-      <div class="section index-1 page-section">
+      <div id="page-1" class="section index-1 page-section">
 
         <div class="grid-x">
 
@@ -81,25 +81,13 @@
 
               </div>
 
-              <div class="page-arrow">
-                
-                <a href="#historyetc">
+                <a href="#page-2" class="page-arrow">
                   
                   <i class="fa fa-chevron-right"></i>
 
                 </a>
 
-              </div>
-
-               <div class="page-arrow-back">
-                
-                <a href="#historyetc">
-                  
-                  <i class="fa fa-chevron-left"></i>
-
-                </a>
-
-              </div>
+              
 
             </div>
             <!--
@@ -117,7 +105,7 @@
 
       <!-- 2. VIDEO THING Page -->
 
-      <div class="section index-2 page-section">
+      <div id="page-2" class="section index-2 page-section">
 
         <div class="grid-x">
 
@@ -169,6 +157,74 @@
                 </a>
 
               </div>
+
+              <a data-izimodal-open="#popup-map" class="arrow-cta"><p>MAP</p></a>
+
+              <div id="popup-map" class="yellow modal-izi open" data-iziModal-group="group1">
+
+                      <button data-iziModal-close class="icon-close">
+
+                            <i class="fa fa-close"></i>
+
+                        </button>
+
+                        <span class="popuptext" id="myPopup"> <div class='tableauPlaceholder' id='viz1520974095446' style='position: relative'>
+
+                        <noscript>
+      
+                        <a href='#'><img alt='&lt;UnderGroundOH&gt; ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Un&#47;UndergroundOH&#47;Sheet1&#47;1_rss.png' style='border: none' /></a>
+
+                      </noscript>
+    
+                      <object class='tableauViz'  style='display:none;'>
+        
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        
+                        <param name='embed_code_version' value='3' /> 
+                        
+                        <param name='site_root' value='' />
+                        
+                        <param name='name' value='UndergroundOH&#47;Sheet1' />
+                        
+                        <param name='tabs' value='no' />
+                        
+                        <param name='toolbar' value='yes' />
+                        
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Un&#47;UndergroundOH&#47;Sheet1&#47;1.png' /> 
+                        
+                        <param name='animate_transition' value='yes' />
+                        
+                        <param name='display_static_image' value='yes' />
+                        
+                        <param name='display_spinner' value='yes' />
+                        
+                        <param name='display_overlay' value='yes' />
+                        
+                        <param name='display_count' value='yes' />
+                        
+                        <param name='filter' value='publish=yes' />
+                        
+                      </object>
+
+                    </div>
+
+                    <script type='text/javascript'>                    
+                      
+                      var divElement = document.getElementById('viz1520974095446'); var vizElement = divElement.getElementsByTagName('object')[0];                    
+                        
+                        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);         
+
+                      </script> </span>
+                      
+                    </div>
+
+                    <script> function myFunction() {
+                             var popup = document.getElementById("myPopup");
+                                popup.classList.toggle("show");
+
+                    </script>
+
+
 
             </div>
             <!--
@@ -470,6 +526,61 @@
             
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
 
+            <div class="popup" onclick="myFunction()"><button class="button"><span>Map </span></button>
+                        <span class="popuptext" id="myPopup"> <div class='tableauPlaceholder' id='viz1520974095446' style='position: relative'>
+                        <noscript>
+      
+                        <a href='#'><img alt='&lt;UnderGroundOH&gt; ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Un&#47;UndergroundOH&#47;Sheet1&#47;1_rss.png' style='border: none' /></a>
+
+                      </noscript>
+    
+                      <object class='tableauViz'  style='display:none;'>
+        
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        
+                        <param name='embed_code_version' value='3' /> 
+                        
+                        <param name='site_root' value='' />
+                        
+                        <param name='name' value='UndergroundOH&#47;Sheet1' />
+                        
+                        <param name='tabs' value='no' />
+                        
+                        <param name='toolbar' value='yes' />
+                        
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Un&#47;UndergroundOH&#47;Sheet1&#47;1.png' /> 
+                        
+                        <param name='animate_transition' value='yes' />
+                        
+                        <param name='display_static_image' value='yes' />
+                        
+                        <param name='display_spinner' value='yes' />
+                        
+                        <param name='display_overlay' value='yes' />
+                        
+                        <param name='display_count' value='yes' />
+                        
+                        <param name='filter' value='publish=yes' />
+                        
+                      </object>
+
+                    </div>
+
+                    <script type='text/javascript'>                    
+                      
+                      var divElement = document.getElementById('viz1520974095446'); var vizElement = divElement.getElementsByTagName('object')[0];                    
+                        
+                        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);         
+
+                      </script> </span>
+                    </div>
+ <script>
+                        // When the user clicks on div, open the popup
+                            function myFunction() {
+                             var popup = document.getElementById("myPopup");
+                                popup.classList.toggle("show");
+}
+                            </script>
           </div>
 
       </div>

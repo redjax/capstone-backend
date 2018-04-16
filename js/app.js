@@ -41,11 +41,13 @@ $(document).ready(function() {
 
 // iZiModals
 
-        
-//IZI Modal [START]
-        $("#page1-expand").iziModal({
-        overlayClose: false,
-        overlayColor: 'rgba(0, 0, 0, 0.6)'
+//Map Popup IZI [START]
+                            
+$(".modal-izi").iziModal({
+  overlayClose: true,
+  overlayColor: 'rgba(0, 0, 0, 0.7)',
+  group: 'group1',
+  loop: false
 
 });
 
