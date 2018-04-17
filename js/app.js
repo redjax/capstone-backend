@@ -8,7 +8,7 @@ $(document).ready(function() {
         horizontalCentered: true,
         sectionsColor: [],
         anchors: [],
-        scrollingSpeed: 300,
+        scrollingSpeed: 100,
         easing: 'swing',
         loopBottom: false,
         loopTop: false,
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 // iZiModals
 
-        
+
 //IZI Modal [START]
         $("#page1-expand").iziModal({
         overlayClose: false,
