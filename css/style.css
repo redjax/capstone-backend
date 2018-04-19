@@ -602,6 +602,10 @@ Map Pop Up
     user-select: none;
 }
 
+#popup-map {
+  left: 140px;
+}
+
 /* actual popup */
 .popup .popuptext {
     visibility: hidden;
