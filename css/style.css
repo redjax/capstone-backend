@@ -498,7 +498,9 @@ nav ul.sub li a:hover { color: #b7ac7f; }
   font-size: 1.2em;
 }
 
-
+.squish {
+  max-height: 30%;
+}
 
 
 
