@@ -12,58 +12,78 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
+.button {
+  display: inline-block;
+  border: none;
+  text-align: center;
+  font-size: 28px;
 
-section.images{
-position: absolute;
-}
-section.videos{
-position: absolute; top: 20px; right: 0px;
-}
-div.map{
-
-}
-div.page{
-  display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-start: 2;
-      grid-column-end: 4;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 </style>
   </head>
 
-  <nav>
-      <ul class="main grid-x grid-margin-x full">
-          <li class="cell small-12 medium-6 medium-offset-3">
-              <a href="#">History of UGRR in Ohio (MAPS)</a>
-          </li>
-          <li class="cell small-12 medium-6 medium-offset-3">
-              <a href="johnbrown.html">John Brown</a>
-          </li>
-          <li class="cell small-12 medium-6 medium-offset-3">
-              <a href="#">Rankin & Parker</a>
-          </li>
-          <li class="cell small-12 medium-6 medium-offset-3">
-              <a href="levincoffintimeline.html">Levi Coffin</a>
-          </li>
-          <li class="cell small-12 medium-6 medium-offset-3">
-              <a href="oberlin.html">Oberlin</a>
-          </li>
-          <li class="cell small-12 medium-6 medium-offset-3">
-              <a href="#">African Americans on the UGRR</a>
-          </li>
-          <li class="cell small-12 medium-6 medium-offset-3">
-              <a href="#">Churches</a>
-          </li>
-          <li class="cell small-12 medium-6 medium-offset-3">
-              <a href="#">About</a>
-          </li>
-      </ul>
-  </nav>
+  <body>
+    <nav>
+        <ul class="main grid-x grid-margin-x full">
+            <li class="cell small-12 medium-6 medium-offset-3">
+                <a href="#">History of UGRR in Ohio (MAPS)</a>
+            </li>
+            <li class="cell small-12 medium-6 medium-offset-3">
+                <a href="johnbrown.html">John Brown</a>
+            </li>
+            <li class="cell small-12 medium-6 medium-offset-3">
+                <a href="#">Rankin & Parker</a>
+            </li>
+            <li class="cell small-12 medium-6 medium-offset-3">
+                <a href="levincoffintimeline.html">Levi Coffin</a>
+            </li>
+            <li class="cell small-12 medium-6 medium-offset-3">
+                <a href="oberlin.html">Oberlin</a>
+            </li>
+            <li class="cell small-12 medium-6 medium-offset-3">
+                <a href="#">African Americans on the UGRR</a>
+            </li>
+            <li class="cell small-12 medium-6 medium-offset-3">
+                <a href="#">Churches</a>
+            </li>
+            <li class="cell small-12 medium-6 medium-offset-3">
+                <a href="#">About</a>
+            </li>
+        </ul>
+    </nav>
 
 <div class="burger">
     <span></span>
 </div>
+<div class="overlay"></div>
 
 <div class="section index-x page-section">
 
@@ -74,23 +94,38 @@ div.page{
             <div class="medium-2">
 <br>
                 <h3>John Brown</h3>
-
             </div>
 
             <div class="medium-4 grid-x grid-margin-x">
-
-                <div class="medium-6">
 
 <section id="text">
                     <p>John Brown, born May 9th, 1800, was an abolitionist who believed in the use of violence to overthrow the slavery system.<br>
                       John Brown is most famously know for his takeover of Harpers Ferry.
                     </p>
 </section>
+
+<section id="story">
+<iframe id="storymap" src="https://uploads.knightlab.com/storymapjs/934cd35b2be92f90355b5c87ea8a9e7b/life-of-john-brown/draft.html" frameborder="1"
+    width="750" height="500" ></iframe>
+</section>
+
 <div class="page">
+
+</section>
+<section id="videos">
+<iframe class="mySlides" src="https://player.vimeo.com/video/265444695" webkitallowfullscreen mozallowfullscreen allowfullscreen height="200" width="450"></iframe>
+<iframe class="mySlides" src="https://player.vimeo.com/video/265475572" webkitallowfullscreen mozallowfullscreen allowfullscreen height="200" width="450"></iframe>
+<iframe class="mySlides" src="https://player.vimeo.com/video/265617216" webkitallowfullscreen mozallowfullscreen allowfullscreen height="200" width="450"></iframe>
+<button class="button" onclick="plusDivs(-1)">&#10094;</button><button class="button" onclick="plusDivs(1)">&#10095;</button>
+
 <section id="images">
-<img class="pictures" src="john.jpg">
-<img class="pictures" src="">
-<!--
+<img class="pictures" src="./css/image/main/cap1.jpg" style="width:300px;height:240px;">
+<img class="pictures" src="./css/image/main/cap2.jpg" style="width:300px;height:240px;">
+<img class="pictures" src="./css/image/main/cap3.jpg" style="width:300px;height:240px;">
+<img class="pictures" src="./css/image/main/cap4.jpg" style="width:300px;height:240px;">
+<img class="pictures" src="./css/image/main/cap5.jpg" style="width:300px;height:240px;">
+<img class="pictures" src="./css/image/main/cap6.jpg" style="width:300px;height:240px;">
+
 <script>
 var myIndex = 0;
 carousel();
@@ -104,16 +139,10 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 </script>
--->
-</section>
-<section id="videos">
-<iframe class="mySlides" src="https://player.vimeo.com/video/265444695" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<iframe class="mySlides" src="https://player.vimeo.com/video/265475572" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<iframe class="mySlides" src="https://player.vimeo.com/video/265617216" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<button onclick="plusDivs(-1)">&#10094;</button><button onclick="plusDivs(1)">&#10095;</button>
+
   <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -136,12 +165,5 @@ function showDivs(n) {
 
 </section>
 </div>
-                </div>
-                <section id="story">
-                <iframe id="storymap" src="https://uploads.knightlab.com/storymapjs/934cd35b2be92f90355b5c87ea8a9e7b/life-of-john-brown/draft.html" frameborder="1"
-                    width="1000" height="500" align="bottom"></iframe>
-                </section>
-
                 </body>
-
                 </html>
